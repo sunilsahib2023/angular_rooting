@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myportfoliostyle.css">
+ <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<script>
+$(document).ready(function()
+{
+$("#p0data").slideUp(0);$("#p1data").slideUp(0);$("#p2data").slideUp(0);
+$("#p3data").slideUp(0);$("#p4data").slideUp(0);$("#p5data").slideUp(0);$("#p6data").slideUp(0);
+
+$("#p0").click(function(){$("#p0data").slideToggle(500); }); 
+$("#p1").click(function(){$("#p1data").slideToggle(500); }); 
+$("#p2").click(function(){$("#p2data").slideToggle(500); }); 
+$("#p3").click(function(){$("#p3data").slideToggle(500); }); 
+$("#p4").click(function(){$("#p4data").slideToggle(500); }); 
+$("#p5").click(function(){$("#p5data").slideToggle(500); }); 
+$("#p6").click(function(){$("#p6data").slideToggle(500); });          
+});
+</script>
+<div class="container-fluid bg-primary" style="color:white">
+	<div class="row">
+           <div class="col-xs-3 col-sm-1  col-md-1 col-lg-2 "></div>
+          <div class="cols-xs-7 col-sm-10  col-md-10  col-lg-8 ">
+          <br/>
+         <h1>My Project Work </h1>
+        <br/>
+<!--      --------------------------          -->
+<div class="panel panel-primary port" style="box-shadow:10px 10px 10px black;" >
+      <div id="p0" class="panel-heading bg-primary"><h3> Web app Jobb.ie</h3>
+</div>
+      <div id="p0data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/jobbie1.png"> <br/>
+       <p>A simple web app built to quickly find jobs in Information Technology. Users enter the search term and desired country, and are offered job listings from 3 of the most popular job sites in world
+Technology . Jobbie uses Bootstrap3 for a mobile-first layout, with jQuery for easy page manipulation. On the backend an Express/Node.js app lives on a Heroku dyno that acts as a middleware to scrape job sites and return the information to the user.
+</p>
+       </div>
+    </div>
+  <br/><br/><br/>
+ <!--    -----------------------------  -->
+<div class="mypanel panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p1" class="panel-heading bg-primary">
+       <h3>My Delivery Pal</h3></div>
+     
+ <div id="p1data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/mydeliverypal.png"> <br/>
+
+<p>
+An Android application for delivery drivers and couriers, making them faster and more efficient at their job
+Technology
+
+Delivery Pal is build with Ionic, Angular, and Firebase for real-time location tracking. Integrating with the Google Maps API for address lookup and navigation. A Node.js server hosted on Heroku acts as a middle-man, handling backend logic and database updates within Firebase
+</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+ <!--  -----------------------------  -->
+<div class="panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p2" class="panel-heading bg-primary">
+       <h3>docker-osx-dev</h3></div>
+      <div  id="p2data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/docker-logo.png"> <br/>
+
+  <p><a href="">https://github.com/brikis98/docker-osx-dev</a></p>
+<p>
+An open source project that allows<br/>
+ you to setup a productive development environment<br/> with Docker on OS X.
+</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+ <!--  -----------------------------  -->
+      <div class="panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p3" class="panel-heading bg-primary">
+       <h3>Hello, Startup  website</h3></div>
+      <div id="p3data"  class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/hello-startup-site.jpg"> <br/>
+ <p><a href="">https://github.com/brikis98/hello-startup-site</a></p>
+<p>
+This is the website for my book.<br/> It's open source and includes many helpful resources for building startups. 
+</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+<!--  -----------------------------  -->    
+      <div class="panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p4" class="panel-heading bg-primary">
+       <h3>LinkedIn Incubator</h3></div>
+      <div id="p4data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/linkedin-incubator.jpg"> <br/>
+<p><a href="#">http://www.wired.com/2012/12/llinkedin-20-percent-time/
+</a></p
+ <p>
+I launched a program at LinkedIn that allows any employee to come <br/>
+up with an idea, form a team around it, and present it to <br/>the execs. If the execs approve it, the team gets 3 months of dedicated
+</br> time to bring the project to life.
+</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+<!--  -----------------------------  -->    
+      <div class="panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p5" class="panel-heading bg-primary">
+           <h3>LinkedIn Engineering Blog</h3></div>
+      <div id="p5data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/linkedin-engineering-blog.jpg"> <br/>
+ <p><a  href="#">http://engineering.linkedin.com/</a></p>
+<p>
+I created the LinkedIn Engineering Blog as a place for LinkedIn developers to talk about their work and grew the site to many thousands of page views per day.
+</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+<!--      --------------------------          -->
+ <div class="panel panel-primary port" style="box-shadow:10px 10px 10px black" >
+      <div id="p6"  class="panel-heading bg-primary">
+       <h3>Resume Builder</h3> </div>
+      <div id="p6data" class="panel-body bg-primary forportfolio">   <img  class="img-responsive" src="images/resume-builder.jpg"> <br/>
+ 
+<p> <a href="#">https://lifehacker.com/linkedin-s-resume-builder-makes-a-resume-from-your-prof-1639642544</a></p>
+<p>I created and launched the Resume Builder as my first Hackday project at LinkedIn as a way to turn your LinkedIn profile into a nicely formatted resume.</p>
+       </div>
+    </div>
+ <br/><br/><br/>
+<!--  -----------------------------  -->    
+<div class="col-sm-2  col-sm-1 col-md-1"> </div>
+      
+</div>
+  </div>
+</body>
+</html> 

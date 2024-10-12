@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myportfoliostyle.css">
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.js"></script>
+</head>
+
+<style></style>
+
+<body ng-app="myApp" class="bg-primary">
+<script>
+// Using Simple jquery For Simple of animation
+
+$(document).ready(function()
+{
+	$(".mybanner").hide(0).delay(1000).show(1000);
+
+document.title="My Portfolio"
+});
+</script>
+
+<div class="container-fluid bg-primary" style="color:white">
+<!-- *****************************************************************************  -->
+   <div class="row ">
+	  <div class="col-xs-12 col-sm-12  col-md-12  col-lg-12">
+
+
+             <nav class="navbar navbar-inverse " style="background:#19194d;box-shadow:10px 10px 10px black;">
+	<div class="container-fluid">
+		<div class="navbar-header">
+      		<button id ="mymenu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>                        
+      		</button>
+                                           </div>
+ 		<div class="collapse navbar-collapse" id="myNavbar"  >		 
+		     <ul class="nav navbar-nav">		 
+                                                 <li class="active" ><a href="#/!">Main</a></li>
+                                            <!--     since  we had added homepage in Main    <a href="#!home">Home</a>  	-->
+   
+			<li><a href="#!portfolio">Portfolio</a></li>
+			<li><a href="#!about">About</a></li>
+			<li><a href="#!contact">Contact</a></li>
+                         			</ul>
+ 			          </div>
+                                                      </div>
+			</nav>
+
+
+
+	</div> 
+  </div>
+<!-- ******************************************************************************** -->
+ 		<div class="col-xs-3 col-sm-2  col-md-3  col-lg-1  ">
+                                    
+	<a href="index.html"><img class="img-responsive picani" src="images/jubby.jpg" alt="Angular JS Portfolio"  ></a>
+                                      <div  class="hidden-xs ">&nbsp; I am Jubby</div>
+              	</div>              
+
+       	   <div class="col-xs-9 col-sm-10 col-md-9  col-lg-11 center-block  mybanner ">
+          
+
+
+          <img class="img-responsive" src="images/banner2.jpg" alt="Angular JS Portfolio" >
+    
+          </div>
+
+</div>
+
+
+  
+<!-- *****************************************************************************  -->
+   
+  <div class="row">
+                 <div class="col-xs-12 col-sm-12  col-md-12  col-lg-12 hidden-xs hidden-sm" >
+
+			<div><h1>
+<!--
+welcome to my Portfolio Website</h1>
+
+             		 In this  website you will find information about me and my projects
+-->
+                         </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12  col-md-12  col-lg-12">
+
+		  	
+<!-- This is my  view Part for Angular JavaScripted Rooted Page -->
+ <div ng-view >New Page Data Will Come Here</div>
+
+                        
+
+                 </div>
+
+
+
+<!--  Footer is here -->
+<BR/>
+ <div class="col-xs-12 col-sm-12  col-md-12  col-lg-12 " style="height:120px;text-align:center;background:#19194d;box-shadow:-2px -10px 10px black;" >
+			  
+			<div class="contactme">Follow me</div>
+			<br/>
+	<a href="#"  class="follow"><img class="myicon img-responsive" src="images/facebook.svg" alt="facebook icon" ></a><a  class="follow"  href="#" ><img class="myicon img-responsive" src="images/envelope.svg" alt="email" ></a><a   class="follow" href="#" ><img class="myicon img-responsive" src="images/twitter.svg" alt="twitter"></a>
+	<a  class="follow" href="#" ><img class="myicon img-responsive" src="images/linkedin-in.svg"  alt="linkedin"></a>   
+     
+          </div>     		
+
+
+
+</div>
+
+
+
+<!--          ******************    Making The Single Page Application here by Angular js     ******************************        -->
+
+<script>
+var app = angular.module("myApp",["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/portfolio", {
+                                templateUrl :"portfolio.html"
+                         
+
+    })
+
+
+
+    .when("/home", {
+        
+templateUrl :"home.html"
+    })
+
+
+
+    .when("/about", {
+        
+templateUrl :"about.html"
+    })
+
+ .when("/contact", {
+        
+templateUrl :"contact.html"
+       })
+    .otherwise({
+        templateUrl :"home.html" 
+    });
+});
+// My Jquery work
+$(document).ready(function()
+{
+    $("#mymenu").click(
+         function()
+              {
+                 $("#myNavbar").slideToggle(1000)
+              });
+
+});
+</script>
+</body>
+</html>

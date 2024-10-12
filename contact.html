@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/myportfoliostyle.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body class="bg-primary">
+<div class="container bg-primary text-center">
+	<div class="row">
+	          <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3  "></div>          	
+           			<div class="col-xs-10 col-sm-7 col-md-6 col-lg-6">
+                                       <!--   I added blank column --->
+                                        <div class="col-xs-2 col-sm-2  col-md-2 col-lg-3">   </div>
+
+              <form method="post" action="php/get.php" style="text-shadow:10px 10px 10px black">
+               	<h1>Contact</h1>
+					
+		<div class="form-group">
+               	<label class="username">Your Name</label>
+              	<input class="form-control"  style="border:1px solid #FFFFFF;color:white;box-shadow:10px 10px 10px black;background:#347AB6"  type="text" placeholder="Enter Name" name="username" required>
+		</div>
+
+		
+
+<div class="form-group">
+      <label for="comment">Your Message</label>
+      <textarea class="form-control" style="border:1px solid #FFFFFF;color:white;box-shadow:10px 10px 10px black;background:#347AB6"  placeholder="Type message here" rows="10"   name="message" required></textarea>
+  </div>
+	<div class="form-group">
+ 	      	<label class="email" required>Your Email Address</label>
+
+              	<input class="form-control" type="email" style="border:1px solid #FFFFFF;color:white;box-shadow:10px 10px 10px black;background:#347AB6"  placeholder="Enter email" name="useremail">
+		<p> <br/>we'll never share your email with anyone else</p>
+               </div>
+                <br>       
+		<button type="submit" class="btn  btn-sm   btn-md  btn-lg btn-primary" style="box-shadow:10px 10px 10px black">Submit</button>
+<button type="reset" class="btn  btn-sm   btn-md  btn-lg btn-primary" style="box-shadow:10px 10px 10px black">Reset</button>
+</br></br></br>
+	      </form>
+            </div>
+       </div>
+</div>
+
+</body>
+</html> 
